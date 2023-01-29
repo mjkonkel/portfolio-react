@@ -16,7 +16,9 @@ export default function NavBar(props) {
             <a href="#portfolio" onClick={() => props.setCurrentPage('Portfolio')}
             className={props.currentPage === 'Portfolio' ? 'active' : 'nav-link'}
             >Portfolio</a>
-            <a href="#">Resume</a>
+            <a href="#resume" onClick={() => props.setCurrentPage('Resume')}
+            className={props.currentPage === 'Resume' ? 'active' : 'nav-link'}
+            >Resume</a>
             </div>
         </nav>
     )
