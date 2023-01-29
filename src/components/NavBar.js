@@ -7,9 +7,15 @@ export default function NavBar(props) {
             <h1>Mitchell Konkel</h1>
             </div>
             <div>
-            <a href="#about" onClick={() => props.setCurrentPage('About')}>About Me</a>
-            <a href="#contact" onClick={() => props.setCurrentPage('Contact')}>Contact</a>
-            <a href="#portfolio" onClick={() => props.setCurrentPage('Portfolio')}>Portfolio</a>
+            <a href="#about" onClick={() => props.setCurrentPage('About')} 
+            className={props.currentPage === 'About' ? 'active' : 'nav-link'}
+            >About Me</a>
+            <a href="#contact" onClick={() => props.setCurrentPage('Contact')}
+            className={props.currentPage === 'Contact' ? 'active' : 'nav-link'}
+            >Contact</a>
+            <a href="#portfolio" onClick={() => props.setCurrentPage('Portfolio')}
+            className={props.currentPage === 'Portfolio' ? 'active' : 'nav-link'}
+            >Portfolio</a>
             <a href="#">Resume</a>
             </div>
         </nav>

@@ -17,6 +17,29 @@ nav {
   align-items: center;
 }
 
+nav a {
+  margin: 0px 5px;
+}
+
+nav h1 {
+  margin: 20px 5px;
+}
+
+/* a {
+  text-decoration: none;
+  color: black;
+} */
+
+.active {
+  text-decoration: none;
+  color: red;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: green;
+}
+
 .figure-bird {
   background-image: url(./assets/bird.JPG);
   min-height: 350px;
@@ -65,11 +88,6 @@ nav {
   background-position: center;
 }
 
-a {
-  text-decoration: none;
-  color: black;
-}
-
 .gitPic {
   height: 40px;
 }
@@ -83,3 +101,18 @@ a {
   border-style: solid;
   margin: 10px;
 }
+
+.content-container {
+  min-height: calc(100vh - 85.88px);
+}
+
+.footer--pin {
+  position: relative;
+  left: 0;
+  bottom: 0;
+}
+
+.footer {
+  margin: 0px 10px;
+}
+
