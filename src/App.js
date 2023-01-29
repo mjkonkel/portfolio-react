@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import './App.css';
 import NavBar from './components/NavBar';
-import AboutMe  from './components/AboutMe'
-import Contact  from './components/Contact'
+import AboutMe  from './components/AboutMe';
+import Contact  from './components/Contact';
+import Portfolio from './components/Portfolio';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('About');
@@ -13,6 +14,8 @@ function App() {
       return <AboutMe />
     } else if(currentPage === 'Contact'){
       return <Contact />
+    } else if (currentPage === 'Portfolio'){
+      return <Portfolio />
     }
   }
   return (
