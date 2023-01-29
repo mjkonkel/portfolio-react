@@ -1,16 +1,27 @@
 .App {
   text-align: center;
+  /* background-color: var(--one); */
+}
+
+:root {
+  --one: #F5F0BB;
+  --two: #C4DFAA;
+  --three: #90C8AC;
+  --four: #91744e;
+
 }
 
 .profilePic {
-  height: 100px;
+  height: 200px;
+  width: fit-content;
   border-radius: 50%;
   border-style: solid;
+  border-color: var(--two);
 
 }
 
 nav {
-  background-color: gray;
+  background-color: var(--two);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -25,19 +36,18 @@ nav h1 {
   margin: 20px 5px;
 }
 
-/* a {
-  text-decoration: none;
-  color: black;
-} */
 
 .active {
   text-decoration: none;
-  color: red;
+  color: var(--four);
+  /* background-color: white; */
+  /* border-radius: 5px; */
+  /* text-shadow: 1px 1px 2px var(--light-green), 0 0 1em var(--light-green), 0 0 0.2em var(--light-green); */
 }
 
 .nav-link {
   text-decoration: none;
-  color: green;
+  color: black;
 }
 
 .figure-bird {
@@ -98,8 +108,10 @@ nav h1 {
 }
 
 .project {
+  background-color: var(--two);
   border-style: solid;
   margin: 10px;
+  border-radius: 2%;
 }
 
 .content-container {
@@ -116,3 +128,22 @@ nav h1 {
   margin: 0px 10px;
 }
 
+.about {
+  margin: 0px 200px;
+}
+
+.resume {
+  margin: 0px 200px;
+}
+
+button {
+  background-color: var(--three);
+  font-size: 16px;
+  border-radius: 12px;
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: var(--two);
+
+}
