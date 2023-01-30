@@ -1,0 +1,33 @@
+nav {
+    background-color: var(--two);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav a {
+    margin: 0px 15px;
+  }
+  
+  nav h1 {
+    margin: 20px 35px;
+  }
+  
+  
+  .active {
+    text-decoration: none;
+    color: var(--four);
+    transition-duration: 0.4s;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: black;
+    transition-duration: 0.4s;
+  }
+  
+  .nav-link:hover {
+    text-decoration: none;
+    color: var(--three);
+  }
