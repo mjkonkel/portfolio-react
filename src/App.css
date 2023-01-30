@@ -13,6 +13,13 @@
 
 .gitPic {
   height: 40px;
+  opacity: 1;
+  transition-duration: 0.4s;
+
+}
+
+.gitPic:hover {
+opacity: .7;
 }
 
 .content-container {

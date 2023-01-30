@@ -23,9 +23,8 @@ export default function Contact() {
             setErrorMessage('Email is invalid');
             return;
         }
-        
-        setEmail('');
 
+        setEmail('');
     }
 
 
