@@ -1,0 +1,12 @@
+.profilePic {
+    height: 200px;
+    width: fit-content;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: var(--two);
+  
+  }
+
+  .about {
+    margin: 0px 200px;
+  }

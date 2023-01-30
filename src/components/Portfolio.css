@@ -1,0 +1,59 @@
+.figure-bird {
+    background-image: url(../assets/bird.JPG);
+    min-height: 350px;
+    flex-grow: 1;
+    background-size: cover;
+    background-position: center;
+}
+
+.figure-blog {
+    background-image: url(../assets/homepage.JPG);
+    min-height: 350px;
+    flex-grow: 1;
+    background-size: cover;
+    background-position: center;
+}
+
+.figure-weather {
+    background-image: url(../assets/weather.jpg);
+    min-height: 350px;
+    flex-grow: 1;
+    background-size: cover;
+    background-position: center;
+}
+
+.figure-work {
+    background-image: url(../assets/work.JPG);
+    min-height: 350px;
+    flex-grow: 1;
+    background-size: cover;
+    background-position: center;
+}
+
+.figure-jate {
+    background-image: url(../assets/jate.jfif);
+    min-height: 350px;
+    flex-grow: 1;
+    background-size: cover;
+    background-position: center;
+}
+
+.figure-password {
+    background-image: url(../assets/password.jpg);
+    min-height: 350px;
+    flex-grow: 1;
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.project {
+    background-color: var(--two);
+    border-style: solid;
+    margin: 10px;
+    border-radius: 2%;
+}
