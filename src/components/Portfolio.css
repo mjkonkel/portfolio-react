@@ -54,6 +54,13 @@
 .project {
     background-color: var(--two);
     border-style: solid;
-    margin: 10px;
+    margin: 10px 20px;
     border-radius: 2%;
+    opacity: .7;
+    transition-duration: 0.4s;
+
+}
+
+.project:hover {
+    opacity: 1;
 }
