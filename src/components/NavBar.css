@@ -4,6 +4,7 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    /* position: sticky; top: 0 */
   }
   
   nav a {
@@ -17,7 +18,7 @@ nav {
   
   .active {
     text-decoration: none;
-    color: var(--four);
+    color: var(--five);
     transition-duration: 0.4s;
   }
   
@@ -29,5 +30,5 @@ nav {
   
   .nav-link:hover {
     text-decoration: none;
-    color: var(--three);
+    color: var(--one);
   }

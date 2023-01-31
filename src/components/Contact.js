@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import { validateEmail } from "../utils/helpers";
+import './Contact.css'
 
 export default function Contact() {
     const [email, setEmail] = useState('');
+    const [userName, setuserName] = useState('');
+    const [message, setMessage] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
 
 
@@ -13,28 +16,48 @@ export default function Contact() {
 
         if (inputType === 'email') {
             setEmail(inputValue);
+            setErrorMessage('');
+
+            if (!validateEmail(email)) {
+                setErrorMessage('Email is invalid');
+                return;
+            }
+        } else if (inputType === 'userName') {
+            setuserName(inputValue)
+        } else {
+            setMessage(inputValue)
         }
+
     };
 
     const handleFormSubmit = (e) => {
         e.preventDefault();
+        
 
-        if (!validateEmail(email)) {
-            setErrorMessage('Email is invalid');
+        if (userName === '') {
+            setErrorMessage('Name is required');
+            return;
+        } else if (message === ''){
+            setErrorMessage('Message is required');
             return;
         }
-
+        setErrorMessage('');
         setEmail('');
+        setuserName('');
+        setMessage('');
     }
 
 
     return (
-        <div>
+        <>
+        <div className="contact">
             <h1>Contact</h1>
             <form>
                 <div>
                     <input
+                        value={userName}
                         name="userName"
+                        onChange={handleInputChange}
                         type="text"
                         placeholder="Name"
                     />
@@ -53,6 +76,7 @@ export default function Contact() {
                         name="message"
                         type="text"
                         placeholder="Message"
+                        onChange={handleInputChange}
                     />
                 </div>
                 <div>
@@ -65,5 +89,6 @@ export default function Contact() {
                 </div>
             )}
         </div>
+        </>
     );
 }

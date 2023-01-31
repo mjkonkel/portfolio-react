@@ -6,7 +6,7 @@ export default function Portfolio() {
 
     return (
         <div>
-            <h1>My Projects</h1>
+            <h1 className="project-header">My Projects</h1>
 <div className="wrapper">
 
 

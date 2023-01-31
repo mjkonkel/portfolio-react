@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
   /* background-color: var(--one); */
   display: flex;
   flex-direction: column;
@@ -8,11 +8,11 @@
 }
 
 :root {
-  --one: #E29DFF;
-  --two: #575CBB;
-  /* --two: #F45C71; */
-  --three: #C8152D;
-  --four: #F45C71;
+  --one: #9A5DA9;
+  --two: #803C91;
+  --three: #6D2380;
+  --four: #541164;
+  --five: #C192CD;
 
 }
 
@@ -44,13 +44,13 @@ opacity: .7;
 }
 
 button {
-  background-color: var(--three);
+  background-color: var(--one);
   font-size: 16px;
   border-radius: 12px;
   transition-duration: 0.4s;
 }
 
 button:hover {
-  background-color: var(--two);
+  background-color: var(--five);
 
 }
