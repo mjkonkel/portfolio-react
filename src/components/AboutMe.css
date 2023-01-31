@@ -8,5 +8,7 @@
   }
 
   .about {
-    margin: 0px 200px;
+  text-align: center;
+  width: 70%;
+  margin: auto;
   }
