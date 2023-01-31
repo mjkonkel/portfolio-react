@@ -1,13 +1,18 @@
 .App {
   text-align: center;
   /* background-color: var(--one); */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: flex-start;
 }
 
 :root {
-  --one: #F5F0BB;
-  --two: #C4DFAA;
-  --three: #90C8AC;
-  --four: #91744e;
+  --one: #E29DFF;
+  --two: #575CBB;
+  /* --two: #F45C71; */
+  --three: #C8152D;
+  --four: #F45C71;
 
 }
 
@@ -23,17 +28,19 @@ opacity: .7;
 }
 
 .content-container {
-  min-height: calc(100vh - 85.88px);
+  flex-grow: 4;
 }
 
 .footer--pin {
   position: relative;
   left: 0;
   bottom: 0;
+  /* background-color: var(--two); */
 }
 
 .footer {
   margin: 0px 10px;
+
 }
 
 button {
