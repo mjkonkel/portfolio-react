@@ -32,63 +32,70 @@ export default function Contact() {
 
     const handleFormSubmit = (e) => {
         e.preventDefault();
-        
+
 
         if (userName === '') {
             setErrorMessage('Name is required');
             return;
-        } else if (message === ''){
+        } else if (email === '') {
+            setErrorMessage('Email is required');
+            return;
+        } else if (message === '') {
             setErrorMessage('Message is required');
+            return;
+        } else if (!validateEmail(email)) {
+            setErrorMessage('Email is invalid');
             return;
         }
         setErrorMessage('');
-        setEmail('');
         setuserName('');
+        setEmail('');
         setMessage('');
     }
 
 
     return (
         <>
-        <div className="contact">
-            <h1>Contact</h1>
-            <form>
-                <div>
-                    <input
-                        value={userName}
-                        name="userName"
-                        onChange={handleInputChange}
-                        type="text"
-                        placeholder="Name"
-                    />
-                </div>
-                <div>
-                    <input
-                        value={email}
-                        name="email"
-                        onChange={handleInputChange}
-                        type="email"
-                        placeholder="Email"
-                    />
-                </div>
-                <div>
-                    <textarea
-                        name="message"
-                        type="text"
-                        placeholder="Message"
-                        onChange={handleInputChange}
-                    />
-                </div>
-                <div>
-                    <button type="submit" onClick={handleFormSubmit}>Submit</button>
-                </div>
-            </form>
-            {errorMessage && (
-                <div>
-                    <p className="error-text">{errorMessage}</p>
-                </div>
-            )}
-        </div>
+            <div className="contact">
+                <h1>Contact</h1>
+                <form>
+                    <div>
+                        <input
+                            value={userName}
+                            name="userName"
+                            onChange={handleInputChange}
+                            type="text"
+                            placeholder="Name"
+                        />
+                    </div>
+                    <div>
+                        <input
+                            value={email}
+                            name="email"
+                            onChange={handleInputChange}
+                            type="email"
+                            placeholder="Email"
+                        />
+                    </div>
+                    <div>
+                        <textarea
+                            value={message}
+                            name="message"
+                            type="text"
+                            placeholder="Message"
+                            onChange={handleInputChange}
+                        />
+                    </div>
+                    <div>
+                        <button type="submit" onClick={handleFormSubmit}>Submit</button>
+                    </div>
+                </form>
+                {errorMessage && (
+                    <div>
+                        <p className="error-text">{errorMessage}</p>
+                    </div>
+                )}
+            </div>
         </>
     );
 }
