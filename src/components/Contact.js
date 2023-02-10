@@ -30,35 +30,35 @@ export default function Contact() {
 
     };
 
-    const handleFormSubmit = (e) => {
-        e.preventDefault();
+    // const handleFormSubmit = (e) => {
+    //     e.preventDefault();
 
 
-        if (userName === '') {
-            setErrorMessage('Name is required');
-            return;
-        } else if (email === '') {
-            setErrorMessage('Email is required');
-            return;
-        } else if (message === '') {
-            setErrorMessage('Message is required');
-            return;
-        } else if (!validateEmail(email)) {
-            setErrorMessage('Email is invalid');
-            return;
-        }
-        setErrorMessage('');
-        setuserName('');
-        setEmail('');
-        setMessage('');
-    }
+    //     if (userName === '') {
+    //         setErrorMessage('Name is required');
+    //         return;
+    //     } else if (email === '') {
+    //         setErrorMessage('Email is required');
+    //         return;
+    //     } else if (message === '') {
+    //         setErrorMessage('Message is required');
+    //         return;
+    //     } else if (!validateEmail(email)) {
+    //         setErrorMessage('Email is invalid');
+    //         return;
+    //     }
+    //     setErrorMessage('');
+    //     setuserName('');
+    //     setEmail('');
+    //     setMessage('');
+    // }
 
 
     return (
         <>
             <div className="contact">
                 <h1>Contact Me</h1>
-                <form>
+                <form target="_blank" action="https://formsubmit.co/a27fb8d2d93ba67f6963dbdbc848c5b1" method="POST" >
                     <div>
                         <input
                             value={userName}
@@ -66,6 +66,7 @@ export default function Contact() {
                             onChange={handleInputChange}
                             type="text"
                             placeholder="Name"
+                            required
                         />
                     </div>
                     <div>
@@ -75,6 +76,7 @@ export default function Contact() {
                             onChange={handleInputChange}
                             type="email"
                             placeholder="Email"
+                            required
                         />
                     </div>
                     <div>
@@ -84,17 +86,19 @@ export default function Contact() {
                             type="text"
                             placeholder="Message"
                             onChange={handleInputChange}
+                            required
                         />
                     </div>
                     <div>
-                        <button type="submit" onClick={handleFormSubmit}>Submit</button>
+                        {/* <button type="submit" onClick={handleFormSubmit}>Submit</button> */}
+                        <button type="submit">Submit</button>
                     </div>
                 </form>
-                {errorMessage && (
+                {/* {errorMessage && (
                     <div>
                         <p className="error-text">{errorMessage}</p>
                     </div>
-                )}
+                )} */}
             </div>
         </>
     );
