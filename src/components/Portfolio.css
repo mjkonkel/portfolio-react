@@ -23,7 +23,7 @@
 }
 
 .figure-work {
-    background-image: url(../assets/work.JPG);
+    background-image: url(../assets/power.jfif);
     min-height: 350px;
     flex-grow: 1;
     background-size: cover;
@@ -39,7 +39,7 @@
 }
 
 .figure-password {
-    background-image: url(../assets/password.jpg);
+    background-image: url(../assets/helping.JPG);
     min-height: 350px;
     flex-grow: 1;
     background-size: cover;
