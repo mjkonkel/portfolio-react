@@ -12,7 +12,7 @@ import Resume from './components/Resume';
 
 function App() {
   return (
-    <Router basename={'/'}>
+    <Router>
       <div className="App">
         <NavBar />
         <Routes>

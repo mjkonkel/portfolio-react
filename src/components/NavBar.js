@@ -1,28 +1,28 @@
 import './NavBar.css'
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export default function NavBar(props) {
     return (
         <nav>
             <div>
-            <h1>Mitchell Konkel</h1>
+                <h1>Mitchell Konkel</h1>
             </div>
             <div>
-            <Link to="/home">
-            <b>Home</b>
-            </Link>
-            <Link to="/about">
-            <b>About Me</b>
-            </Link>
-            <Link to="/contact">
-            <b>Contact Me</b>
-            </Link>
-            <Link to="/portfolio">
-            <b>Portfolio</b>
-            </Link>
-            <Link to="/resume">
-            <b>Resume</b>
-            </Link>
+                <NavLink to="/home" className="nav-link">
+                    <b>Home</b>
+                </NavLink>
+                <NavLink to="/about" className="nav-link">
+                    <b>About</b>
+                </NavLink>
+                <NavLink to="/contact" className="nav-link">
+                    <b>Contact</b>
+                </NavLink>
+                <NavLink to="/portfolio" className="nav-link">
+                    <b>Portfolio</b>
+                </NavLink>
+                <NavLink to="/resume" className="nav-link">
+                    <b>Resume</b>
+                </NavLink>
             </div>
         </nav>
     )
